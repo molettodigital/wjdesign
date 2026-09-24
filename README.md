@@ -28,9 +28,10 @@ Eventos enviados ao `dataLayer`: `whatsapp_click` (com `wa_local` e `produto`), 
 
 ## Publicar (Cloudflare Pages)
 
-Conecte o repositório ao Pages com:
-- Comando de build: nenhum
-- Diretório de saída: `public`
+- **Projeto:** `wjdesign-natal`, na conta Cloudflare da Moletto, conectado a este repositório. Diretório de saída: `public`, sem comando de build.
+- **Todo push em `main` publica sozinho.** Outras branches geram um deploy de prévia.
+- **Endereço:** https://wjdesign-natal.pages.dev
+- **Domínio:** `natal.wjmoveis.com`. O DNS do wjmoveis.com fica no Wix: registro CNAME `natal` → `wjdesign-natal.pages.dev`.
 
 ## Regras de Google Ads respeitadas
 
