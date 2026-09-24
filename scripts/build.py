@@ -52,7 +52,7 @@ PRODUTOS = [
      ["Couro natural", "Sistema automatizado", "Design exclusivo"], "poltrona-reclinavel-couro", (900, 955)),
     ("Poltrona assinada", "Studio Uultis", "Poltronas", 24999, 10900, True,
      ["Madeira natural", "Design exclusivo", "Conforto premium"], "poltrona-studio-uultis", (1000, 687)),
-    ("Mesa quadrada", "base em madeira · tampo laqueado · 1,50 m", "Mesas", 18999, 6990, False,
+    ("Mesa quadrada", "base em madeira · tampo laqueado · 1,50 m · cadeiras não inclusas", "Mesas", 18999, 6990, False,
      ["Base em madeira", "Tampo laqueado", "Design exclusivo"], "mesa-quadrada", (1086, 970)),
     ("Mesa de jantar assinada", "Studio Esse · 2,40 x 1,20 m", "Mesas", 25999, 12500, True,
      ["Madeira natural", "Tampo laqueado", "Design exclusivo"], "mesa-jantar-studio-esse", (900, 647)),
