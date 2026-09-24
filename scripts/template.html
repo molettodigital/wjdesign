@@ -20,6 +20,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
+  <link rel="canonical" href="https://natal.wjmoveis.com/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232a2a2b'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='%23e9e8e5' text-anchor='middle'%3EWJ%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,6 +178,7 @@
     .card:hover{transform:translateY(-3px);box-shadow:0 24px 50px -28px rgba(25,20,15,.45)}
     .card[hidden]{display:none}
     .card-media{position:relative;background:var(--linen-2);aspect-ratio:4/3;overflow:hidden}
+    .card-media img,.hero-media img{-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
     .card-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
     .card:hover .card-media img{transform:scale(1.03)}
     .card-body{display:flex;flex-direction:column;flex:1;padding:18px 18px 20px}
@@ -526,6 +528,7 @@
       <a class="logo" href="#topo" translate="no" aria-label="WJ Design, voltar ao topo"><img src="https://static.wixstatic.com/media/83a60e_f87d80d236414b5b8c80066b9c0a191c~mv2.jpg/v1/fill/w_524,h_138,al_c,q_90/wj-design-sob-medida.jpg" loading="lazy" width="262" height="69" alt="" onerror="this.outerHTML='&lt;span class=&quot;logo-txt&quot;&gt;WJ DESIGN&lt;/span&gt;'"></a>
       <p>Brasília-DF · desde 1994</p>
       <p>Ofertas válidas para peças selecionadas e sujeitas à disponibilidade. Consulte condições com a equipe <span translate="no">WJ</span>.</p>
+      <p>© 2026 <span translate="no">WJ Design</span>. Textos, fotos e layout protegidos pela Lei 9.610/98. Reprodução proibida sem autorização.</p>
       <p>Criado com <span aria-hidden="true">❤️</span><span class="sr-only">amor</span> por <a href="https://molettodigital.com.br" target="_blank" rel="noopener">Moletto Digital</a></p>
     </div>
   </footer>
@@ -551,6 +554,20 @@
     /* ===== Ajustes rápidos ===================================================== */
     const WHATSAPP = '{{WHATSAPP}}';
     /* ========================================================================== */
+
+    // Proteção contra clonagem: se esta página for copiada e publicada em outro endereço,
+    // o visitante é levado para a página oficial.
+    (function () {
+      var ok = ['natal.wjmoveis.com', 'wjdesign-natal.pages.dev', 'localhost', '127.0.0.1'];
+      var h = location.hostname;
+      if (!ok.some(function (d) { return h === d || h.endsWith('.' + d); })) {
+        location.replace('https://natal.wjmoveis.com/' + location.search);
+      }
+    })();
+
+    // Fotos: sem menu de "salvar imagem" e sem arrastar
+    document.addEventListener('contextmenu', function (e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
+    document.addEventListener('dragstart', function (e) { if (e.target.tagName === 'IMG') e.preventDefault(); });
 
     document.documentElement.classList.add('js');
     window.dataLayer = window.dataLayer || [];   // o GTM (GTM-55HF7G4X) é carregado no <head>

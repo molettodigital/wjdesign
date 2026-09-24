@@ -48,3 +48,10 @@ Eventos enviados ao `dataLayer`:
 ## Configuração do GTM pronta para importar
 
 `gtm/wj-gtm-conversao-whatsapp.json` tem a tag do Google, o vinculador de conversões, o acionador `whatsapp_click` e a conversão "Clique no WhatsApp". No GTM: Administrador → Importar contêiner → escolher o arquivo → espaço de trabalho existente → **Mesclar** (renomear conflitos). O ID (`16658250321`) e o rótulo (`sgyaCIGYhYQdENH0ooc-`) da conversão "Clique no WhatsApp" já vêm preenchidos. Teste em Visualizar e clique em Enviar.
+
+## Proteção contra cópia
+
+- `functions/_middleware.js`: bloqueia programas de cópia de sites (HTTrack, wget, scrapers) na página; robôs do Google, WhatsApp e redes sociais continuam liberados. Roda só no HTML (`public/_routes.json`).
+- Script no fim do `template.html`: se a página for publicada em outro domínio, o visitante é mandado para `natal.wjmoveis.com`. Para usar outro domínio oficial, inclua na lista `ok`.
+- `_headers`: impede que a página seja exibida dentro de outro site (iframe) e pede para buscadores não guardarem cópia.
+- Fotos sem menu "salvar imagem" e sem arrastar; aviso de direitos autorais no rodapé.
