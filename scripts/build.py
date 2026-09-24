@@ -52,6 +52,10 @@ PRODUTOS = [
      ["Couro natural", "Sistema automatizado", "Design exclusivo"], "poltrona-reclinavel-couro", (900, 955)),
     ("Poltrona assinada", "Studio Uultis", "Poltronas", 24999, 10900, True,
      ["Madeira natural", "Design exclusivo", "Conforto premium"], "poltrona-studio-uultis", (1000, 687)),
+    ("Mesa quadrada", "base em madeira · tampo laqueado · 1,50 m", "Mesas", 18999, 6990, False,
+     ["Base em madeira", "Tampo laqueado", "Design exclusivo"], "mesa-quadrada", (1086, 970)),
+    ("Mesa de jantar assinada", "Studio Esse · 2,40 x 1,20 m", "Mesas", 25999, 12500, True,
+     ["Madeira natural", "Tampo laqueado", "Design exclusivo"], "mesa-jantar-studio-esse", (900, 647)),
 ]
 
 # Onde a foto fica melhor enquadrada no card 4:3 (padrão: centro)
@@ -59,6 +63,7 @@ ENQUADRAMENTO = {
     "poltrona-reclinavel-couro": "50% 70%",
     "poltrona-dirce-ayaco": "50% 45%",
     "aparador-madeira": "50% 40%",
+    "mesa-quadrada": "50% 15%",
 }
 
 
@@ -136,7 +141,7 @@ def main():
     produtos = sorted(PRODUTOS, key=lambda p: (p[3] - p[4]) / p[3], reverse=True)
     cards = "".join(card(p, i) for i, p in enumerate(produtos))
     maior = max(round((p[3] - p[4]) / p[3] * 100) for p in PRODUTOS)
-    contagem = {c: sum(1 for p in PRODUTOS if p[2] == c) for c in ("Sofás", "Poltronas", "Outras peças")}
+    contagem = {c: sum(1 for p in PRODUTOS if p[2] == c) for c in ("Sofás", "Poltronas", "Mesas", "Outras peças")}
 
     html = (RAIZ / "scripts" / "template.html").read_text(encoding="utf-8")
     trocas = {
@@ -144,6 +149,7 @@ def main():
         "{{TOTAL}}": str(len(PRODUTOS)),
         "{{N_SOFAS}}": str(contagem["Sofás"]),
         "{{N_POLTRONAS}}": str(contagem["Poltronas"]),
+        "{{N_MESAS}}": str(contagem["Mesas"]),
         "{{N_OUTRAS}}": str(contagem["Outras peças"]),
         "{{DESCONTO_CAMPANHA}}": str(DESCONTO_CAMPANHA),
         "{{WHATSAPP}}": WHATSAPP,
