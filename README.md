@@ -17,7 +17,7 @@ Página de vendas da campanha de Natal da WJ Design, feita para receber tráfego
 1. Edite a lista `PRODUTOS` em `scripts/build.py`.
 2. Rode `python3 scripts/build.py`.
 
-O percentual de desconto, a economia, a ordem (maior desconto primeiro), os contadores dos filtros e o "até X% OFF" do topo são recalculados.
+O percentual de desconto, a economia, a ordem (maior desconto primeiro), e os contadores dos filtros são recalculados. O "até 70% OFF" da campanha fica em `DESCONTO_CAMPANHA`, no mesmo arquivo.
 
 ## Ajustes no fim do `template.html`
 

@@ -14,6 +14,10 @@ PUBLIC = RAIZ / "public"
 
 WHATSAPP = "5561992146833"
 
+# Desconto da campanha ("até 70% OFF"), usado no título, no topo e na etiqueta do hero.
+# Os cards mostram o percentual real de cada peça.
+DESCONTO_CAMPANHA = 70
+
 # nome, detalhe, categoria, preço de, preço por, "cada"?, destaques, arquivo da foto, largura x altura da foto
 PRODUTOS = [
     ("Sofá em couro natural", "2,80 m", "Sofás", 31180, 9900, False,
@@ -141,7 +145,7 @@ def main():
         "{{N_SOFAS}}": str(contagem["Sofás"]),
         "{{N_POLTRONAS}}": str(contagem["Poltronas"]),
         "{{N_OUTRAS}}": str(contagem["Outras peças"]),
-        "{{MAIOR_DESCONTO}}": str(maior),
+        "{{DESCONTO_CAMPANHA}}": str(DESCONTO_CAMPANHA),
         "{{WHATSAPP}}": WHATSAPP,
         "{{ICONE_WA}}": ICONE_WA,
         "{{SPRITE_WA}}": SPRITE_WA,
@@ -153,7 +157,7 @@ def main():
         html = html.replace(chave, valor)
     assert "{{" not in html, "placeholder sem valor no template"
     (PUBLIC / "index.html").write_text(html, encoding="utf-8")
-    print(f"public/index.html gerado com {len(PRODUTOS)} ofertas (maior desconto: {maior}%)")
+    print(f"public/index.html gerado com {len(PRODUTOS)} ofertas (campanha: até {DESCONTO_CAMPANHA}% OFF; maior desconto de peça: {maior}%)")
 
 
 if __name__ == "__main__":
