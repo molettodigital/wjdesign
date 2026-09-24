@@ -19,12 +19,18 @@ Página de vendas da campanha de Natal da WJ Design, feita para receber tráfego
 
 O percentual de desconto, a economia, a ordem (maior desconto primeiro), e os contadores dos filtros são recalculados. O "até 70% OFF" da campanha fica em `DESCONTO_CAMPANHA`, no mesmo arquivo.
 
-## Ajustes no fim do `template.html`
+## Medição (Google Tag Manager)
 
-- `GTM_ID`: contêiner do Google Tag Manager. Vazio = sem medição.
-- `CUPOM`: valor e código do desconto do pop-up de saída.
+O contêiner **GTM-55HF7G4X** está instalado no `<head>`, com o `<noscript>` logo após o `<body>`.
 
-Eventos enviados ao `dataLayer`: `whatsapp_click` (com `wa_local` e `produto`), `popup_saida_exibido`, `filtro_ofertas`. Use `whatsapp_click` como conversão no Google Ads.
+Eventos enviados ao `dataLayer`:
+- `whatsapp_click`, com `wa_local` (topo, hero, card, flutuante, popup-saida…) e `produto`. Use como conversão do Google Ads.
+- `popup_saida_exibido`, com `origem` (mouse ou rolagem).
+- `filtro_ofertas`, com `filtro`.
+
+## Pop-up de saída
+
+É só um aviso de urgência, sem desconto: "Espere! Essas peças não voltam", com os dias que faltam para o Natal e um botão para o WhatsApp.
 
 ## Publicar (Cloudflare Pages)
 
@@ -35,6 +41,6 @@ Eventos enviados ao `dataLayer`: `whatsapp_click` (com `wa_local` e `produto`), 
 
 ## Regras de Google Ads respeitadas
 
-- O pop-up de saída não mexe no botão voltar e aparece só uma vez por sessão.
+- A pop-up de saída não mexe no botão voltar e aparece só uma vez por sessão.
 - `noindex`: a página fica fora da busca orgânica, mas o robô do Google Ads (AdsBot) continua avaliando a página.
 - Não há `robots.txt` bloqueando o AdsBot.

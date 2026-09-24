@@ -151,6 +151,7 @@ def main():
         "{{SPRITE_WA}}": SPRITE_WA,
         "{{WA_GERAL}}": wa("Olá! Vi a campanha de Natal da WJ Design e quero ajuda para escolher uma peça."),
         "{{WA_SOB_MEDIDA}}": wa("Olá! Vi a campanha de Natal da WJ Design e quero falar sobre um móvel sob medida."),
+        "{{WA_POPUP}}": wa("Olá! Vi as ofertas de Natal da WJ Design e quero saber quais peças ainda estão disponíveis."),
         "{{WA_LOJA}}": wa("Olá! Vi a campanha de Natal da WJ Design e quero visitar uma das lojas. Onde está a peça que eu gostei?"),
     }
     for chave, valor in trocas.items():

@@ -27,7 +27,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/campanha-natal-960.webp" imagesrcset="assets/campanha-natal-480.webp 480w, assets/campanha-natal-960.webp 960w" imagesizes="(min-width: 960px) 600px, 100vw" fetchpriority="high">
 
-  <!-- PIXEL: o Google Tag Manager é carregado pelo script no fim da página (preencha GTM_ID). Tags do Google Ads, GA4 e Meta Pixel ficam dentro do GTM. -->
+  <!-- PIXEL: Google Tag Manager (GTM-55HF7G4X). Tags do Google Ads, GA4 e Meta Pixel ficam dentro do GTM. -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-55HF7G4X');</script>
 
   <style>
     :root{
@@ -255,18 +260,17 @@
       radial-gradient(60% 50% at 50% 0%, rgba(255,255,255,.11), transparent 70%), var(--esp);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);
       padding:64px 26px 26px;text-align:center;overscroll-behavior:contain}
     .exit .tag{left:50%;top:-30px;transform:translateX(-50%) rotate(-5deg);transform-origin:50% 50%;padding:12px 22px 12px 42px}
-    .exit .tag b{font:400 2.2rem/1 var(--f-display)}
+    .exit .tag b{display:block;font:400 2.2rem/1 var(--f-display);margin:2px 0}
     .exit .tag small{display:block;font:600 .66rem/1 var(--f-text);letter-spacing:.2em;text-transform:uppercase;margin-top:2px}
     .exit h2{font-size:clamp(1.7rem, 1.3rem + 2vw, 2.2rem);margin-bottom:12px}
     .exit h2:focus{outline:none}
     .exit p{color:var(--muted-d);font-size:var(--t-sm)}
-    .exit .code{display:inline-block;margin:16px 0 20px;border:1px dashed var(--silver);color:#fff;padding:8px 16px;font:500 1rem/1 var(--f-text);letter-spacing:.2em}
+    .exit .alert{display:inline-block;margin:16px 0 20px;border:1px solid rgba(255,255,255,.22);border-radius:999px;color:#fff;padding:8px 16px;font:500 var(--t-sm)/1.2 var(--f-text);letter-spacing:.04em}
     .exit .btn{width:100%}
     .exit-no{margin-top:12px;background:none;border:0;color:var(--muted-d);font:400 var(--t-sm)/1 var(--f-text);text-decoration:underline;text-underline-offset:4px;padding:12px;cursor:pointer;min-height:44px}
     .exit-no:hover{color:var(--linen)}
     .exit-x{position:absolute;right:8px;top:8px;width:44px;height:44px;border:0;background:none;color:var(--muted-d);font:300 1.8rem/1 var(--f-text);cursor:pointer;border-radius:50%}
     .exit-x:hover{color:var(--linen);background:rgba(243,236,225,.08)}
-    .exit small.terms{display:block;margin-top:14px;font-size:.72rem;color:#8f8476;line-height:1.5}
     .exit[open] .exit-card{animation:pop .35s var(--ease)}
     @keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
 
@@ -321,6 +325,7 @@
   </style>
 </head>
 <body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55HF7G4X" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.54 1.74 6.51L3 29l6.66-1.74A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.63c-2 0-3.95-.54-5.66-1.55l-.4-.24-3.95 1.03 1.05-3.85-.26-.4A10.6 10.6 0 0 1 5.4 16c0-5.87 4.77-10.64 10.65-10.64 5.86 0 10.63 4.77 10.63 10.64 0 5.87-4.77 10.63-10.64 10.63Zm5.84-7.96c-.32-.16-1.89-.93-2.18-1.04-.3-.1-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.21-.18-.32-.02-.5.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.09 1.3 3.3.16.21 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.46.2 2 .12.61-.09 1.89-.77 2.15-1.52.27-.74.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37Z"/></symbol></svg>
   <a class="skip" href="#ofertas">Pular para as ofertas</a>
 
@@ -899,33 +904,23 @@
 
   <dialog class="exit" id="saida" aria-labelledby="saida-titulo" aria-describedby="saida-texto">
     <div class="exit-card">
-      <span class="tag" aria-hidden="true"><span><b data-exit-valor>5%</b><small>extra</small></span></span>
+      <span class="tag" aria-hidden="true"><span><small>até</small><b>70%</b><small>off</small></span></span>
       <button class="exit-x" type="button" data-exit-close aria-label="Fechar">×</button>
-      <h2 id="saida-titulo" tabindex="-1" autofocus>Antes de sair: mais <span data-exit-valor>5%</span> de desconto</h2>
-      <p id="saida-texto">Somado ao preço de Natal, em qualquer peça desta página. Chame a <span translate="no">WJ</span> no WhatsApp com o cupom:</p>
-      <span class="code" data-exit-cupom translate="no">NATALWJ5</span>
-      <a class="btn btn-light" href="https://wa.me/5561992146833?text=Ol%C3%A1%21%20Vi%20a%20campanha%20de%20Natal%20da%20WJ%20Design%20e%20quero%20ajuda%20para%20escolher%20uma%20pe%C3%A7a." target="_blank" rel="noopener" data-wa="popup-saida" data-exit-link><svg class="i-wa" viewBox="0 0 32 32" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg><span>Quero o desconto no WhatsApp</span></a>
-      <button class="exit-no" type="button" data-exit-close>Não, obrigado</button>
-      <small class="terms">Válido para as peças da campanha, enquanto houver estoque. Um cupom por atendimento.</small>
+      <h2 id="saida-titulo" tabindex="-1" autofocus>Espere! Essas peças não voltam</h2>
+      <p id="saida-texto">Os preços de Natal valem só enquanto houver estoque, e muitas peças são únicas. Quando alguém leva, a oferta acaba.</p>
+      <span class="alert" data-exit-dias>Estoque limitado</span>
+      <a class="btn btn-light" href="https://wa.me/5561992146833?text=Ol%C3%A1%21%20Vi%20as%20ofertas%20de%20Natal%20da%20WJ%20Design%20e%20quero%20saber%20quais%20pe%C3%A7as%20ainda%20est%C3%A3o%20dispon%C3%ADveis." target="_blank" rel="noopener" data-wa="popup-saida" data-exit-link><svg class="i-wa" viewBox="0 0 32 32" width="20" height="20" aria-hidden="true" focusable="false"><use href="#i-wa"/></svg><span>Ver o que ainda está disponível</span></a>
+      <button class="exit-no" type="button" data-exit-close>Continuar vendo as ofertas</button>
     </div>
   </dialog>
 
   <script>
     /* ===== Ajustes rápidos ===================================================== */
-    const GTM_ID = '';                 // ex.: 'GTM-XXXXXXX'. Vazio = sem medição.
     const WHATSAPP = '5561992146833';
-    const CUPOM = { valor: '5%', codigo: 'NATALWJ5' };   // desconto do pop-up de saída
     /* ========================================================================== */
 
     document.documentElement.classList.add('js');
-    window.dataLayer = window.dataLayer || [];
-    if (GTM_ID) {
-      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
-      const s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(GTM_ID);
-      document.head.appendChild(s);
-    }
+    window.dataLayer = window.dataLayer || [];   // o GTM (GTM-55HF7G4X) é carregado no <head>
 
     const store = {
       get(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
@@ -990,10 +985,8 @@
       const dlg = document.getElementById('saida');
       if (!dlg || typeof dlg.showModal !== 'function') return;
       const inicio = Date.now();
-      const msg = 'Olá! Vi o cupom ' + CUPOM.codigo + ' de ' + CUPOM.valor + ' de desconto extra na campanha de Natal da WJ Design e quero aproveitar.';
-      dlg.querySelectorAll('[data-exit-valor]').forEach(function (el) { el.textContent = CUPOM.valor; });
-      dlg.querySelector('[data-exit-cupom]').textContent = CUPOM.codigo;
-      dlg.querySelector('[data-exit-link]').href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg);
+      const cont = document.querySelector('[data-countdown]');
+      if (cont && /dia|Natal/.test(cont.textContent)) dlg.querySelector('[data-exit-dias]').textContent = cont.textContent.charAt(0).toUpperCase() + cont.textContent.slice(1);
 
       function abrir(origem) {
         if (store.get('wj_saida') || store.get('wj_wa') || dlg.open || Date.now() - inicio < 6000) return;
