@@ -44,3 +44,7 @@ Eventos enviados ao `dataLayer`:
 - A pop-up de saída não mexe no botão voltar e aparece só uma vez por sessão.
 - `noindex`: a página fica fora da busca orgânica, mas o robô do Google Ads (AdsBot) continua avaliando a página.
 - Não há `robots.txt` bloqueando o AdsBot.
+
+## Configuração do GTM pronta para importar
+
+`gtm/wj-gtm-conversao-whatsapp.json` tem a tag do Google, o vinculador de conversões, o acionador `whatsapp_click` e a conversão "Clique no WhatsApp". No GTM: Administrador → Importar contêiner → escolher o arquivo → espaço de trabalho existente → **Mesclar** (renomear conflitos). Depois preencha as variáveis `Google Ads - ID da conversão` e `Google Ads - Rótulo da conversão`, teste em Visualizar e clique em Enviar.
