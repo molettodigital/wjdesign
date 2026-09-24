@@ -7,7 +7,7 @@
   <meta name="description" content="{{TOTAL}} sofás, poltronas e peças assinadas da WJ Design com até {{MAIOR_DESCONTO}}% de desconto. Couro natural, linho e madeira natural. 3 lojas em Brasília. Confirme a disponibilidade pelo WhatsApp.">
   <!-- Página exclusiva para anúncios: fora da busca orgânica. O robô de qualidade do Google Ads (AdsBot) continua lendo a página. -->
   <meta name="robots" content="noindex, follow">
-  <meta name="theme-color" content="#19140f">
+  <meta name="theme-color" content="#2a2a2b">
   <meta name="format-detection" content="telephone=no">
 
   <meta property="og:type" content="website">
@@ -19,7 +19,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2319140f'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='%23cfa35a' text-anchor='middle'%3EWJ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232a2a2b'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='26' fill='%23e9e8e5' text-anchor='middle'%3EWJ%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,18 +30,21 @@
 
   <style>
     :root{
-      --esp:#19140f;      /* espresso: fundo escuro, como as paredes do showroom */
-      --esp-2:#241c15;
-      --esp-3:#30261d;
-      --linen:#f3ece1;    /* linho: fundo claro */
-      --linen-2:#e9e0d1;
-      --brass:#cfa35a;    /* latão: destaque sobre o escuro */
-      --bronze:#7e5716;   /* bronze: destaque sobre o claro */
-      --ink:#19140f;
-      --muted:#5f554a;
-      --muted-d:#bdb2a3;
-      --line:rgba(25,20,15,.14);
-      --line-d:rgba(243,236,225,.14);
+      --esp:#2a2a2b;      /* grafite: fundo escuro, como os botões do wjmoveis.com */
+      --esp-2:#333334;
+      --esp-3:#404042;
+      --linen:#f5f4f2;    /* claro neutro */
+      --linen-2:#e9e8e5;
+      --btn-light:#e9e8e5;    /* cinza claro: botões sobre o fundo escuro */
+      --grey:#7a7b7f;     /* cinza da caixa da logo WJ */
+      --grey-ink:#6d6e72; /* mesmo cinza, escurecido para texto branco pequeno */
+      --silver:#b5b6b9;   /* destaque de texto sobre o escuro */
+      --bronze:#5d5e62;   /* cinza médio: destaque sobre o claro */
+      --ink:#2a2a2b;
+      --muted:#5a5a5c;
+      --muted-d:#bdbdbd;
+      --line:rgba(42,42,43,.14);
+      --line-d:rgba(245,244,242,.14);
       --wa:#25d366;
       --wa-ink:#0b3d20;
 
@@ -71,14 +74,14 @@
     p{margin:0}
     ul{margin:0;padding:0;list-style:none}
     s{text-decoration-thickness:1px}
-    :focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+    :focus-visible{outline:2px solid var(--btn-light);outline-offset:3px;border-radius:2px}
     .light :focus-visible{outline-color:var(--bronze)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--brass);color:var(--esp);padding:10px 14px;font-weight:500;text-decoration:none}
+    .skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--btn-light);color:var(--esp);padding:10px 14px;font-weight:500;text-decoration:none}
     .skip:focus{top:12px}
     .wrap{width:min(var(--wrap), 100% - var(--gutter)*2);margin-inline:auto}
     .eyebrow{font:500 var(--t-xs)/1.3 var(--f-text);letter-spacing:.2em;text-transform:uppercase;color:var(--bronze)}
-    .dark .eyebrow{color:var(--brass)}
+    .dark .eyebrow{color:var(--silver)}
 
     /* ---------- Botões ---------- */
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid transparent;
@@ -86,35 +89,39 @@
       transition:transform .2s var(--ease), background-color .2s, border-color .2s, box-shadow .2s}
     .btn:hover{transform:translateY(-2px)}
     .btn:active{transform:translateY(0)}
-    .btn-brass{background:var(--brass);color:var(--esp);box-shadow:0 10px 30px -12px rgba(207,163,90,.7)}
-    .btn-brass:hover{background:#dbb26b}
+    .btn-light{background:var(--btn-light);color:var(--esp);box-shadow:0 10px 30px -14px rgba(0,0,0,.6)}
+    .btn-light:hover{background:#fff}
     .btn-ghost{border-color:var(--line-d);color:var(--linen)}
-    .btn-ghost:hover{border-color:var(--brass);color:#fff}
+    .btn-ghost:hover{border-color:var(--btn-light);color:#fff}
     .btn-dark{background:var(--esp);color:var(--linen)}
     .btn-dark:hover{background:var(--esp-3)}
     .btn .i-wa{flex:none}
-    .btn-brass .i-wa,.btn-dark .i-wa,.btn-card .i-wa{color:var(--wa)}
-    .btn-brass .i-wa{color:var(--wa-ink)}
+    .btn-light .i-wa,.btn-dark .i-wa,.btn-card .i-wa{color:var(--wa)}
+    .btn-light .i-wa{color:#1a9e4b}
 
     /* ---------- Faixa de campanha e topo ---------- */
-    .ribbon{background:var(--brass);color:var(--esp);font:500 var(--t-xs)/1.4 var(--f-text);letter-spacing:.06em;text-align:center;padding:8px 16px}
+    .ribbon{background:var(--grey-ink);color:#fff;font:500 var(--t-xs)/1.4 var(--f-text);letter-spacing:.06em;text-align:center;padding:8px 16px}
     .ribbon b{font-weight:600}
-    .topbar{position:sticky;top:0;z-index:60;background:rgba(25,20,15,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d);color:var(--linen)}
+    .topbar{position:sticky;top:0;z-index:60;background:rgba(42,42,43,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d);color:var(--linen)}
     .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
-    .logo{display:inline-flex;align-items:center;border:1px solid rgba(243,236,225,.55);padding:6px 12px;font:400 1.02rem/1 var(--f-text);letter-spacing:.14em;text-decoration:none;white-space:nowrap}
+    .logo{display:inline-flex;align-items:center;text-decoration:none;white-space:nowrap}
+    .logo img{height:42px;width:auto}
+    .logo-txt{background:var(--grey);color:#fff;padding:8px 14px;font:300 1.05rem/1 var(--f-text);letter-spacing:.12em}
+    footer .logo{justify-self:center;margin-bottom:6px}
+    footer .logo img{height:48px}
     .topbar-right{display:flex;align-items:center;gap:18px}
     .topbar-city{font-size:var(--t-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d)}
     .btn-top{min-height:42px;padding:0 16px;font-size:.9rem}
 
     /* ---------- Hero ---------- */
     .hero{position:relative;color:var(--linen);background:
-      radial-gradient(38% 55% at 18% -8%, rgba(207,163,90,.22), transparent 70%),
-      radial-gradient(30% 45% at 62% -12%, rgba(207,163,90,.16), transparent 70%),
-      radial-gradient(28% 40% at 95% -10%, rgba(207,163,90,.14), transparent 70%),
+      radial-gradient(38% 55% at 18% -8%, rgba(255,255,255,.09), transparent 70%),
+      radial-gradient(30% 45% at 62% -12%, rgba(255,255,255,.07), transparent 70%),
+      radial-gradient(28% 40% at 95% -10%, rgba(255,255,255,.06), transparent 70%),
       var(--esp);padding:36px 0 56px;overflow:hidden}
     .hero-grid{display:grid;gap:34px;align-items:center}
     .hero h1{font-size:var(--t-hero);margin:14px 0 18px}
-    .hero h1 em{font-style:normal;color:var(--brass);display:block}
+    .hero h1 em{font-style:normal;color:var(--silver);display:block}
     .hero-lead{color:var(--muted-d);font-size:1.08rem;max-width:34rem}
     .hero-lead strong{color:var(--linen);font-weight:500}
     .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
@@ -127,7 +134,7 @@
     .hero-media figcaption{margin-top:10px;font-size:var(--t-xs);color:var(--muted-d);letter-spacing:.04em}
 
     /* ---------- Assinatura: a etiqueta de preço ---------- */
-    .tag{position:absolute;display:grid;place-items:center;background:var(--brass);color:var(--esp);
+    .tag{position:absolute;display:grid;place-items:center;background:var(--grey);color:#fff;
       clip-path:polygon(18% 0,100% 0,100% 100%,18% 100%,0 50%);transform:rotate(-7deg);transform-origin:0 50%;
       filter:drop-shadow(0 10px 18px rgba(0,0,0,.35))}
     .tag::before{content:"";position:absolute;left:9%;top:50%;width:.5em;height:.5em;margin-top:-.25em;border-radius:50%;background:var(--esp)}
@@ -142,7 +149,7 @@
     .values ul{display:grid;grid-template-columns:repeat(2,1fr)}
     .values li{padding:18px 14px;border-right:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
     .values li:nth-child(2n){border-right:0}
-    .values small{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);margin-bottom:4px}
+    .values small{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--silver);margin-bottom:4px}
     .values strong{font-weight:400;font-size:var(--t-sm)}
 
     /* ---------- Ofertas ---------- */
@@ -172,7 +179,7 @@
     .card-title span{display:block;font:400 var(--t-sm)/1.4 var(--f-text);color:var(--muted);margin-top:4px;letter-spacing:.02em}
     .price{display:grid;gap:2px;margin:16px 0 14px;padding-top:14px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
     .price-de{font-size:var(--t-sm);color:var(--muted)}
-    .price-por{font:400 2rem/1.1 var(--f-display);color:var(--bronze);letter-spacing:-.01em}
+    .price-por{font:400 2rem/1.1 var(--f-display);color:var(--ink);letter-spacing:-.01em}
     .price-por small{font:500 var(--t-xs)/1 var(--f-text);color:var(--muted);margin-left:6px;letter-spacing:.06em}
     .price-save{font-size:var(--t-xs);font-weight:500;color:#2f6b3f;margin-top:4px}
     .chips{display:none;flex-wrap:wrap;gap:6px;margin-bottom:18px}
@@ -220,7 +227,7 @@
 
     /* ---------- Chamada final ---------- */
     .final{background:
-      radial-gradient(40% 70% at 50% 0%, rgba(207,163,90,.2), transparent 70%), var(--esp);color:var(--linen);text-align:center}
+      radial-gradient(40% 70% at 50% 0%, rgba(255,255,255,.04), transparent 70%), var(--esp);color:var(--linen);text-align:center}
     .final h2{font-size:var(--t-xl);max-width:18ch;margin:14px auto 16px}
     .final p{color:var(--muted-d);max-width:36rem;margin:0 auto 28px}
     .final .btn{min-width:min(100%, 340px)}
@@ -244,7 +251,7 @@
     .exit{border:0;padding:0;background:transparent;max-width:min(460px, calc(100% - 32px));width:100%;overflow:visible;color:var(--linen)}
     .exit::backdrop{background:rgba(12,9,6,.72);backdrop-filter:blur(3px)}
     .exit-card{position:relative;background:
-      radial-gradient(60% 50% at 50% 0%, rgba(207,163,90,.25), transparent 70%), var(--esp);border:1px solid rgba(207,163,90,.35);border-radius:var(--r);
+      radial-gradient(60% 50% at 50% 0%, rgba(255,255,255,.11), transparent 70%), var(--esp);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);
       padding:64px 26px 26px;text-align:center;overscroll-behavior:contain}
     .exit .tag{left:50%;top:-30px;transform:translateX(-50%) rotate(-5deg);transform-origin:50% 50%;padding:12px 22px 12px 42px}
     .exit .tag b{font:400 2.2rem/1 var(--f-display)}
@@ -252,7 +259,7 @@
     .exit h2{font-size:clamp(1.7rem, 1.3rem + 2vw, 2.2rem);margin-bottom:12px}
     .exit h2:focus{outline:none}
     .exit p{color:var(--muted-d);font-size:var(--t-sm)}
-    .exit .code{display:inline-block;margin:16px 0 20px;border:1px dashed var(--brass);color:var(--brass);padding:8px 16px;font:500 1rem/1 var(--f-text);letter-spacing:.2em}
+    .exit .code{display:inline-block;margin:16px 0 20px;border:1px dashed var(--silver);color:#fff;padding:8px 16px;font:500 1rem/1 var(--f-text);letter-spacing:.2em}
     .exit .btn{width:100%}
     .exit-no{margin-top:12px;background:none;border:0;color:var(--muted-d);font:400 var(--t-sm)/1 var(--f-text);text-decoration:underline;text-underline-offset:4px;padding:12px;cursor:pointer;min-height:44px}
     .exit-no:hover{color:var(--linen)}
@@ -320,10 +327,10 @@
 
   <header class="topbar">
     <div class="wrap">
-      <a class="logo" href="#topo" translate="no" aria-label="WJ Design, voltar ao topo">WJ DESIGN</a>
+      <a class="logo" href="#topo" translate="no" aria-label="WJ Design, voltar ao topo"><img src="https://static.wixstatic.com/media/83a60e_f87d80d236414b5b8c80066b9c0a191c~mv2.jpg/v1/fill/w_524,h_138,al_c,q_90/wj-design-sob-medida.jpg" width="262" height="69" alt="" onerror="this.outerHTML='&lt;span class=&quot;logo-txt&quot;&gt;WJ DESIGN&lt;/span&gt;'"></a>
       <div class="topbar-right">
         <span class="topbar-city">Brasília · 3 lojas</span>
-        <a class="btn btn-brass btn-top" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="topo">{{ICONE_WA}}<span>WhatsApp</span></a>
+        <a class="btn btn-light btn-top" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="topo">{{ICONE_WA}}<span>WhatsApp</span></a>
       </div>
     </div>
   </header>
@@ -336,7 +343,7 @@
           <h1 id="titulo">Prepare sua casa para o Natal <em>com até {{MAIOR_DESCONTO}}% OFF</em></h1>
           <p class="hero-lead">{{TOTAL}} sofás, poltronas e peças assinadas em <strong>couro natural, linho e madeira natural</strong>, com preço de campanha. Muitas peças são únicas: quando saem, não voltam.</p>
           <div class="hero-cta">
-            <a class="btn btn-brass" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="hero">{{ICONE_WA}}<span>Falar com um consultor</span></a>
+            <a class="btn btn-light" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="hero">{{ICONE_WA}}<span>Falar com um consultor</span></a>
             <a class="btn btn-ghost" href="#ofertas">Ver as {{TOTAL}} ofertas</a>
           </div>
           <ul class="hero-proof">
@@ -397,7 +404,7 @@
           <h2 id="titulo-medida">Não achou a medida certa para a sua sala?</h2>
           <p>A WJ Sob Medida, no Shopping ID, desenvolve a peça sob encomenda, com condições especiais de campanha em itens selecionados.</p>
         </div>
-        <a class="btn btn-brass" href="{{WA_SOB_MEDIDA}}" target="_blank" rel="noopener" data-wa="sob-medida">{{ICONE_WA}}<span>Falar sobre sob medida</span></a>
+        <a class="btn btn-light" href="{{WA_SOB_MEDIDA}}" target="_blank" rel="noopener" data-wa="sob-medida">{{ICONE_WA}}<span>Falar sobre sob medida</span></a>
       </div>
     </section>
 
@@ -502,14 +509,15 @@
         <p class="eyebrow">Por tempo limitado</p>
         <h2 id="titulo-final">Encontrou a sua peça? Garanta antes que outra pessoa leve.</h2>
         <p>Envie a peça que você gostou e a equipe <span translate="no">WJ</span> ajuda com medidas, composição e disponibilidade para o seu ambiente.</p>
-        <a class="btn btn-brass" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="final">{{ICONE_WA}}<span>Falar com um consultor agora</span></a>
+        <a class="btn btn-light" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="final">{{ICONE_WA}}<span>Falar com um consultor agora</span></a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap">
-      <p><strong translate="no">WJ DESIGN</strong> · Brasília-DF</p>
+      <a class="logo" href="#topo" translate="no" aria-label="WJ Design, voltar ao topo"><img src="https://static.wixstatic.com/media/83a60e_f87d80d236414b5b8c80066b9c0a191c~mv2.jpg/v1/fill/w_524,h_138,al_c,q_90/wj-design-sob-medida.jpg" loading="lazy" width="262" height="69" alt="" onerror="this.outerHTML='&lt;span class=&quot;logo-txt&quot;&gt;WJ DESIGN&lt;/span&gt;'"></a>
+      <p>Brasília-DF · desde 1994</p>
       <p>Ofertas válidas para peças selecionadas e sujeitas à disponibilidade. Consulte condições com a equipe <span translate="no">WJ</span>.</p>
       <p>Criado com <span aria-hidden="true">❤️</span><span class="sr-only">amor</span> por <a href="https://molettodigital.com.br" target="_blank" rel="noopener">Moletto Digital</a></p>
     </div>
@@ -527,7 +535,7 @@
       <h2 id="saida-titulo" tabindex="-1" autofocus>Antes de sair: mais <span data-exit-valor>5%</span> de desconto</h2>
       <p id="saida-texto">Somado ao preço de Natal, em qualquer peça desta página. Chame a <span translate="no">WJ</span> no WhatsApp com o cupom:</p>
       <span class="code" data-exit-cupom translate="no">NATALWJ5</span>
-      <a class="btn btn-brass" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="popup-saida" data-exit-link>{{ICONE_WA}}<span>Quero o desconto no WhatsApp</span></a>
+      <a class="btn btn-light" href="{{WA_GERAL}}" target="_blank" rel="noopener" data-wa="popup-saida" data-exit-link>{{ICONE_WA}}<span>Quero o desconto no WhatsApp</span></a>
       <button class="exit-no" type="button" data-exit-close>Não, obrigado</button>
       <small class="terms">Válido para as peças da campanha, enquanto houver estoque. Um cupom por atendimento.</small>
     </div>
