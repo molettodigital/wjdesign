@@ -157,7 +157,7 @@
           {
             "type": "TEMPLATE",
             "key": "value",
-            "value": "PREENCHER_ID"
+            "value": "16658250321"
           }
         ],
         "notes": "Número da conversão do Google Ads, SEM o 'AW-'. Ex.: 123456789",
@@ -172,7 +172,7 @@
           {
             "type": "TEMPLATE",
             "key": "value",
-            "value": "PREENCHER_ROTULO"
+            "value": "sgyaCIGYhYQdENH0ooc-"
           }
         ],
         "notes": "Rótulo da ação 'Clique no WhatsApp'. Ex.: AbC-D_efG-h12_34-567",

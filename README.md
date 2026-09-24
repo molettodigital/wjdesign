@@ -47,4 +47,4 @@ Eventos enviados ao `dataLayer`:
 
 ## Configuração do GTM pronta para importar
 
-`gtm/wj-gtm-conversao-whatsapp.json` tem a tag do Google, o vinculador de conversões, o acionador `whatsapp_click` e a conversão "Clique no WhatsApp". No GTM: Administrador → Importar contêiner → escolher o arquivo → espaço de trabalho existente → **Mesclar** (renomear conflitos). Depois preencha as variáveis `Google Ads - ID da conversão` e `Google Ads - Rótulo da conversão`, teste em Visualizar e clique em Enviar.
+`gtm/wj-gtm-conversao-whatsapp.json` tem a tag do Google, o vinculador de conversões, o acionador `whatsapp_click` e a conversão "Clique no WhatsApp". No GTM: Administrador → Importar contêiner → escolher o arquivo → espaço de trabalho existente → **Mesclar** (renomear conflitos). O ID (`16658250321`) e o rótulo (`sgyaCIGYhYQdENH0ooc-`) da conversão "Clique no WhatsApp" já vêm preenchidos. Teste em Visualizar e clique em Enviar.
